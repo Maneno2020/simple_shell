@@ -92,7 +92,7 @@ int read_history(info_t *info)
 			build_history_list(info, buf + last, linecount++);
 			last = i + 1;
 		}
-		if (last != i)
+	if (last != i)
 		build_history_list(info, buf + last, linecount++);
 	free(buf);
 	info->histcount = linecount;
