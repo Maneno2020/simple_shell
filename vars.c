@@ -127,7 +127,7 @@ int replace_vars(info_t *info)
 		node = node_starts_with(info->env, &info->argv[i][1], '=');
 		if (node)
 		{
-	`		replace_string(&(info->argv[i]),
+			replace_string(&(info->argv[i]),
 			_strdup(_strchr(node->str, '=') + 1));
 			continue;
 		}
